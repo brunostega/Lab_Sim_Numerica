@@ -1,0 +1,23 @@
+0.8
+108
+1.1
+2.2
+0.0005
+10000
+10
+1
+1
+9
+200
+
+  ReadInput >> temp;
+  ReadInput >> npart;
+  ReadInput >> rho;
+  ReadInput >> rcut;
+  ReadInput >> delta;
+  ReadInput >> nstep;
+  ReadInput >> iprint;
+  ReadInput >> TFbool;    
+  ReadInput >> termalBool;
+  ReadInput >> N_cicle;
+  ReadInput >> N_equilib_step;

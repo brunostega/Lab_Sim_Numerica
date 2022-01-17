@@ -1,0 +1,56 @@
+#ifndef __ISING__
+#define __ISING__
+
+//Random numbers
+#include "../random.h"
+#include <string>
+
+int seed[4];
+Random rnd;
+
+
+//parameters, observables
+const int m_props=1000;
+int n_props,iu,ic,im,ix,ig;
+double nbins;
+double walker[m_props];
+bool BoolStart, BoolEquilib;
+std::string Metro_Gibbs;
+std::string cartella;
+
+// averages
+double blk_av[m_props],blk_norm,accepted,attempted;
+double ave_E[m_props];
+double glob_av[m_props],glob_av2[m_props];
+double stima_u,stima_c,stima_m,stima_x,stima_g;
+double err_u,err_c,err_m,err_x,err_g;
+
+//configuration
+const int m_spin=50;
+double s[m_spin];
+
+// thermodynamical state
+int nspin;
+double beta,temp,temp_iniz, temp_final,J,h;
+
+// simulation
+int nstep, nblk, Nequilib_step;
+int step_temp;  //number of steps of the temperature
+double delta_T;
+
+//functions
+void Equilibration_LowT(int);
+void Equilibration_HighT(int);
+void Input(bool);
+void Reset(int);
+void Accumulate(void);
+void Averages(int);
+void Move(std::string);
+void ConfFinal(void);
+void Measure(void);
+double Boltzmann(int, int);
+int Pbc(int);
+double Error(double,double,int);
+
+#endif
+

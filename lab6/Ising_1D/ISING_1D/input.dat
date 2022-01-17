@@ -1,0 +1,21 @@
+0.5
+2. 
+15
+50
+1.0
+0.00
+0
+20
+10000
+0
+
+  ReadInput >> temp_iniz;
+  ReadInput >> temp_final;
+  ReadInput >> step_temp;
+  ReadInput >> nspin;
+  ReadInput >> J;
+  ReadInput >> h;
+  ReadInput >> metro;
+  ReadInput >> nblk;
+  ReadInput >> nstep;
+  ReadInput >> BoolStart

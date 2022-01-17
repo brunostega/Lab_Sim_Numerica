@@ -18,7 +18,6 @@ void exp(double *Sn,int N, int n, double lambda, Random rnd){  //calculating the
 			sum+=rnd.Exponential(lambda);
 		}
 		Sn[i]=1./n*sum;
-		//cout<<Sn[i]<<endl;
 		sum=0;
 	}	
 }
@@ -31,7 +30,6 @@ void cauchy(double *Sn,int N, int n, double mean,double gamma, Random rnd){  //c
 			sum+=rnd.Cauchy(mean, gamma);
 		}
 		Sn[i]=1./n*sum;
-		//cout<<Sn[i]<<endl;
 		sum=0;
 	}	
 }
@@ -44,7 +42,6 @@ void dado(double *Sn,int N, int n, int facce ,Random rnd){   //calculating the s
 			sum+=rnd.Dado(facce);
 		}
 		Sn[i]=1./n*sum;
-		//cout<<Sn[i]<<endl;
 		sum=0;
 	}
 }

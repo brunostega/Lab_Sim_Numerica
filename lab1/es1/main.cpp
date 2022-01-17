@@ -118,7 +118,7 @@ for(int i=0;i<M;i++){       //divide [0,1] in M subintervals
 	subint[i]=i*double(1)/M;
 }
 
-double appo=0;    //suppert variable
+double appo=0;    //support variable
 
 for(int i=0;i<M;i++){  //running the "experiment" (10000 throws) M times
 	for(int j=0;j<n;j++){

@@ -1,0 +1,9 @@
+32
+800
+200
+0.025
+ 
+  ReadInput >> N_city;  
+  ReadInput >> N_beta;  
+  ReadInput >> N_step;  
+  ReadInput >> Beta_step;  

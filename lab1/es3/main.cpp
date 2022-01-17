@@ -16,7 +16,7 @@ int main (int argc, char *argv[]){
         //INITIALISING SOME VARIABLES                                                   
 
         Random rnd;          //random generator     
-        rnd.Initialize();   //initializing random generator
+        rnd.Initialize();    //initializing random generator
         const string file_out="stima_pi.csv";   //output file
 
         int N_blocks=100;         //# of blocks
@@ -24,7 +24,7 @@ int main (int argc, char *argv[]){
         int n=N_throws/N_blocks;  //# of throws in each block
         BlockStat block_stat=BlockStat(N_blocks, N_throws);     //initializing class for block statistics
 
-        int M=13000;         //number of needles 
+        int M=13000;        //number of needles 
         double d=1.;        //distance between lines
         double L=0.83;      //lenght of the needle
         
