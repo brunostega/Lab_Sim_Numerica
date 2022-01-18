@@ -2,8 +2,8 @@
 #include <fstream>
 #include <string>
 #include <math.h>
-#include "/home/bruno/Scrivania/universita/magistrale1/lab_simulaz/esercizi/random.h"
-#include "/home/bruno/Scrivania/universita/magistrale1/lab_simulaz/esercizi/block_stat.h"
+#include "../../random.h"
+#include "../../block_stat.h"
 #include "lib.h"
 //#include "vettore.h"
 #include <string>
@@ -67,7 +67,7 @@ int main (int argc, char *argv[]){
 
 		abs_distance[i]=sqrt(block_stat.get_final_mean());          //estimating sqrt of the mean distance (mean using all blocks)      
 		err[i]=1/(2*abs_distance[i])*block_stat.get_final_error();  //estimating error (error using all blocks) associated with mean distance (using error propagation)
-		cout<<block_stat.get_final_error()<<endl;
+		//cout<<block_stat.get_final_error()<<endl;
 	}
 
 	//OUTPUT

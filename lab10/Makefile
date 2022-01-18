@@ -3,7 +3,7 @@ CFLAGS = -Wall -O3 --std=c++11
 percorso=..
 
 
-all: 
+esegui: 
 	make circle 
 	make square
 	mv output.* output/

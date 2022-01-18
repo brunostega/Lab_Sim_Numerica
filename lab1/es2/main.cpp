@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 #include <math.h>
-#include "/home/bruno/Scrivania/universita/magistrale1/lab_simulaz/esercizi/random.h"
+#include "../../random.h"
 #include "lib.h"
 #include <string>
 

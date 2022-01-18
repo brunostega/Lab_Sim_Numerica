@@ -3,7 +3,6 @@
 #include <fstream>        // Stream class to both read and write from/to files.
 #include <cmath>          // rint, pow
 #include "main.h"
-#include "lib.h"
 #include "../random.h"
 #include "../block_stat.h"
 

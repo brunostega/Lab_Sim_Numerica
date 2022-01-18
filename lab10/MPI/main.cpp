@@ -10,7 +10,7 @@ int main (int argc, char *argv[]){
 	MPI_Comm_size(MPI_COMM_WORLD, &size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-	//cout<<" Sono il nodo "<<rank<<" dei "<<size<<" che hai utilizzato!"<<endl;
+	cout<<" Sono il nodo "<<rank<<" dei "<<size<<" che hai utilizzato!"<<endl;
 
 	/*int my_values[3];
 	for(int i=0;i<3;i++)

@@ -4,12 +4,10 @@
 #include <cmath>
 #include <cstdlib>
 #include "lib.h"
-#include "/home/bruno/Scrivania/universita/magistrale1/lab_simulaz/esercizi/random.h"
+#include "../../random.h"
 #include <string>
 
 using namespace std;
-
-
 
 
 double pi(int M,double L, double d, Random & rnd){    //stima di pigreco con esperimento di Buffon
@@ -18,6 +16,7 @@ double pi(int M,double L, double d, Random & rnd){    //stima di pigreco con esp
 	double x=0;
 	double y=0;
 	double X=0;
+	double costeta;
 	int count=0;
 	double prob=0;
 

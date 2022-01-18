@@ -163,6 +163,7 @@ double BlockStat :: get_final_mean(){
 double BlockStat :: get_final_error(){
 
 	if(_final_error==0){       //check: if is 0, it means block statistics wasn't done already
+		
 		cout<<"Problem: final error was not estimated already"<<endl;
 	}
 	return _final_error;

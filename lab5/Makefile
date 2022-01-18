@@ -1,10 +1,10 @@
 CC = g++
 CFLAGS = -Wall -O3 --std=c++11
-percorso= /home/bruno/Scrivania/universita/magistrale1/lab_simulaz/esercizi
+percorso= ..
 
 
 
-all:
+esegui:
 	make main.exe
 	./main.exe
 	make clean

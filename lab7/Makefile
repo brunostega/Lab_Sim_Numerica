@@ -23,8 +23,8 @@ Gas: Monte_Carlo_NVT.exe
 	cp gas/input.gas input.dat
 	./Monte_Carlo_NVT.exe gas
 	make clean
-	cp output.* gas/
-	cp config.final gas/
+	mv output.* gas/
+	mv config.final gas/
 
 
 
@@ -33,8 +33,8 @@ Liquid: Monte_Carlo_NVT.exe
 	cp liquid/input.liquid input.dat
 	./Monte_Carlo_NVT.exe liquid
 	make clean
-	cp output.* liquid/
-	cp config.final liquid/
+	mv output.* liquid/
+	mv config.final liquid/
 
 
 Solid: Monte_Carlo_NVT.exe
@@ -42,8 +42,8 @@ Solid: Monte_Carlo_NVT.exe
 	cp solid/input.solid input.dat
 	./Monte_Carlo_NVT.exe solid
 	make clean
-	cp output.* solid/
-	cp config.final solid/
+	mv output.* solid/
+	mv config.final solid/
 
 
 

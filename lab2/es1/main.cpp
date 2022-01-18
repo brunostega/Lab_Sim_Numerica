@@ -2,10 +2,10 @@
 #include <fstream>
 #include <string>
 #include <math.h>
-#include "/home/bruno/Scrivania/universita/magistrale1/lab_simulaz/esercizi/random.h"
-#include "/home/bruno/Scrivania/universita/magistrale1/lab_simulaz/esercizi/block_stat.h"
+#include "../../random.h"
+#include "../../block_stat.h"
+#include "../../function.h"
 #include "lib.h"
-#include "/home/bruno/Scrivania/universita/magistrale1/lab_simulaz/esercizi/function.h"
 #include <string>
 #include <cmath>
 
