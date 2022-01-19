@@ -1,3 +1,5 @@
+Dinamica molecolare, Algoritmo di Verlet
+
 
 Per compilare ed eseguire il programma per tutte e tre le fasi con equilibrazione, lanciare il comando
 >./experiment_with_equilibration.sh

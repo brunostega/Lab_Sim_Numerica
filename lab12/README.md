@@ -1,0 +1,1 @@
+Image recognition con reti neurali

@@ -1,3 +1,5 @@
+Algoritmo di Metropolis, campionamento funzione d'onda dell'atomo di idrogeno
+
 Per compilare ed eseguire il programma lanciare il comando
 
 >make esegui

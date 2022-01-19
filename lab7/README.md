@@ -1,4 +1,4 @@
-Dinamica molecolare usando l'algoritmo di NVT
+Dinamica molecolare, algoritmo di NVT 
 
 
 Per compilare ed eseguire il programma con equilibrazione iniziale, lanciare il comando

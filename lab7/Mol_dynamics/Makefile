@@ -19,9 +19,9 @@ Gas: main.exe
 	rm gas/output_temp.dat
 	touch gas/output_temp.dat
 	cp gas/input_gas.dat input.dat
-	make main.exe
 	./main.exe gas
 	cp output.* gas/
+	make clean
 
 
 Liquid: main.exe
@@ -31,6 +31,7 @@ Liquid: main.exe
 	cp liquid/input_liquid.dat input.dat
 	./main.exe liquid
 	cp output.* liquid/
+	make clean
 
 
 Solid: main.exe
@@ -40,39 +41,37 @@ Solid: main.exe
 	cp solid/input_solid.dat input.dat
 	./main.exe solid
 	cp output.* solid/
+	make clean
 
 
 Gas_termalized: 
 	cp gas/input_gas_term.dat input.dat
-	make main.exe
 	./main.exe gas
+	make clean
 
 Liquid_termalized: 
 	cp liquid/input_liquid_term.dat input.dat
-	make main.exe
 	./main.exe liquid
+	make clean
 
 Solid_termalized:
 	cp solid/input_solid_term.dat input.dat
-	make main.exe
 	./main.exe solid
+	make clean
 
 normal: 
 	rm output_temp.dat
 	touch output_temp.dat
 	./main.exe
 
-main.exe : main.o $(percorso)/random.o lib.o $(percorso)/function.o $(percorso)/block_stat.o
-	$(CC) $(percorso)/random.o main.o $(percorso)/function.o $(percorso)/block_stat.o lib.o -o main.exe
+main.exe : main.o $(percorso)/random.o $(percorso)/function.o $(percorso)/block_stat.o
+	$(CC) $(percorso)/random.o main.o $(percorso)/function.o $(percorso)/block_stat.o -o main.exe
 
 main.o : main.cpp main.h
 	$(CC) -c main.cpp -o main.o $(CFLAGS)
 
 $(percorso)/random.o : $(percorso)/random.cpp $(percorso)/random.h $(percorso)/function.h
 	$(CC) -c $(percorso)/random.cpp -o $(percorso)/random.o $(CFLAGS)
-
-lib.o : lib.cpp lib.h $(percorso)/random.h
-	$(CC) -c lib.cpp -o lib.o $(CFLAGS)
 
 $(percorso)/function.o : $(percorso)/function.cpp $(percorso)/function.h  
 	$(CC) -c $(percorso)/function.cpp -o $(percorso)/function.o $(CFLAGS)
