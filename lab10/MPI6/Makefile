@@ -11,13 +11,13 @@ esegui:
 
 Circle: main.exe
 	cp input.circle input.dat
-	mpiexec -np 4 ./main.exe
+	mpiexec -np 6 ./main.exe
 	mv *.circle.* Circle/	
 	make clean
 
 Square: main.exe
 	cp input.square input.dat
-	mpiexec -np 4 ./main.exe
+	mpiexec -np 6 ./main.exe
 	mv *.square.* Square/	
 	make clean
 

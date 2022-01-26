@@ -1,0 +1,20 @@
+32
+400
+700
+0.66
+0.097
+2
+1
+1
+square
+
+  ReadInput >> N_city;  
+  ReadInput >> N_indiv;  
+  ReadInput >> generation
+  ReadInput >> P_c
+  ReadInput >> P_m
+  ReadInput >> fit_exp
+  ReadInput >> exp
+  ReadInput >> cross
+
+

@@ -79,6 +79,7 @@ class Gene_Alghoritm{
 
     Random rnd;
     std::string shape;
+
     private:
 
     //cities

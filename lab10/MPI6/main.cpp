@@ -46,12 +46,13 @@ int main (int argc, char *argv[]){
 	}
 	gene.Print_Cities();   //printing in output every starting position for different ranks 
 
+
 	gene.fitness();
 	gene.Sort();
 
-
 	delete [] cities_pos_x;
 	delete [] cities_pos_y;
+
 /////////////////
 
 	for(int i=0;i<generation;i++)   //genetic alghoritm
@@ -144,13 +145,11 @@ int main (int argc, char *argv[]){
 	ofstream  time;
 	time.open("output."+gene.shape+".time.dat", ios::app);
 
-	if (time.is_open()){cout<<"okkkkk"<<endl;} 
+	if (time.is_open()){time<<rank<<","<<dt<<endl;} 
 	else cerr << "PROBLEM: Unable to open random.out" << endl;
-	time<<rank<<","<<dt<<endl;
 	time.close();
 
 	MPI_Finalize();
-	
 
 	return 0;
 }
